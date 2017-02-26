@@ -46,6 +46,9 @@ class Html extends React.Component {
               dangerouslySetInnerHTML={{ __html: style.cssText }}
             />,
           )}
+          {
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+          }
         </head>
         <body>
           <div
@@ -72,3 +75,17 @@ class Html extends React.Component {
 }
 
 export default Html;
+
+
+/*
+@question: where to run this function?
+```
+var WebFont = require('webfontloader');
+
+WebFont.load({
+  google: {
+    families: ['Roboto']
+  }
+});
+```
+*/
