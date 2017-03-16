@@ -25,6 +25,15 @@ html {
   line-height: 1.375; /* ~22px */
 }
 
+.app {
+  background: url(http://mouseonthekeys.net/wp/wp-content/uploads/2012/07/bg_dark.jpg);
+  background-clip: border-box;
+  background-repeat: repeat repeat;
+}
+
+/*
+ * TODO: load local image, instead of remote.image */
+
 a {
   color: #0074c2;
 }
