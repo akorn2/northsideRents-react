@@ -9,7 +9,12 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+
+import { Grid, Row, Col } from 'react-bootstrap';
 import s from './Home.css';
+import { BodyText, HeaderText } from './Home-copy';
+import ContactList from '../../components/ContactList/ContactList.js';
+import Test from '../../components/Carousel/Carousel';
 
 class Home extends React.Component {
   static propTypes = {
@@ -22,21 +27,22 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
-          <h1>React.js News</h1>
-          {this.props.news.map(item => (
-            <article key={item.link} className={s.newsItem}>
-              <h1 className={s.newsTitle}><a href={item.link}>{item.title}</a></h1>
-              <div
-                className={s.newsDesc}
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{ __html: item.content }}
-              />
-            </article>
-          ))}
-        </div>
-      </div>
+      <Grid className={s.root}>
+        <Row className={s.rowie}>
+          <Col xs={12} > <Test /> </Col>
+        </Row>
+        <Row className={s.rowie}>
+          <Col xs={12} sm={8} >
+            <Col xs={12} > { HeaderText }</Col>
+            <Col xs={12} > { BodyText } </Col>
+          </Col>
+          <Col xs={12} sm={4} className={s.sidebar}>
+            <Row>
+              <Col xs={12}> { ContactList /* Why not work as <ContactList /> */} </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }
