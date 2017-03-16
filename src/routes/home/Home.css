@@ -9,10 +9,35 @@
 
 @import '../../components/variables.css';
 
+.sidebar {
+  padding-top: 15px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar :hover {
+  background: rgba(0, 0, 0, 0.11);
+}
+
+.rowie {
+  margin: 25px 100px;
+  padding: 15px 0;
+  background-clip: border-box;
+  background-color: #fff;
+}
+
 .root {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/*
+
+.zap {
+  background: url('/assets/routes/home/keys.jpg?cce35ff2') no-repeat center center !important;
+  background-color: red !important;
+}
+
+TODO: url link asset
 
 .container {
   margin: 0 auto;
@@ -46,4 +71,4 @@
   img {
     max-width: 100%;
   }
-}
+} */
