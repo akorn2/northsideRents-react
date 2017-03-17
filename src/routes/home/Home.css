@@ -14,10 +14,6 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.sidebar :hover {
-  background: rgba(0, 0, 0, 0.11);
-}
-
 .rowie {
   margin: 25px 100px;
   padding: 15px 0;
@@ -28,6 +24,10 @@
 .root {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+p {
+  font-size: 22px;
 }
 
 /*

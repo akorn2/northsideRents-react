@@ -14,7 +14,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import s from './Home.css';
 import { BodyText, HeaderText } from './Home-copy';
 import ContactList from '../../components/ContactList/ContactList.js';
-import Test from '../../components/Carousel/Carousel';
+import Carousel from '../../components/Carousel/Carousel';
 
 class Home extends React.Component {
   static propTypes = {
@@ -29,9 +29,7 @@ class Home extends React.Component {
     return (
       <Grid className={s.root}>
         <Row className={s.rowie}>
-          <Col xs={12} > <Test /> </Col>
-        </Row>
-        <Row className={s.rowie}>
+          <Col xs={12} > <Carousel /> </Col>
           <Col xs={12} sm={8} >
             <Col xs={12} > { HeaderText }</Col>
             <Col xs={12} > { BodyText } </Col>
