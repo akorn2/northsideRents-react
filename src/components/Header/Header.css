@@ -14,9 +14,14 @@
 }
 
 .root {
-  background: #373277;
+  background: url(http://mouseonthekeys.net/wp/wp-content/themes/wp-bloom/img/skin_dark/header.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
   color: #fff;
 }
+
+/*
+ * TODO: load local image, instead of remote.image */
 
 .container {
   margin: 0 auto;
