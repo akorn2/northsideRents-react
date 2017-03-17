@@ -13,7 +13,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { Grid, Row, Col } from 'react-bootstrap';
 import s from './Home.css';
 import { BodyText, HeaderText } from './Home-copy';
-import ContactList from '../../components/ContactList/ContactList.js';
+import ContactButtons from '../../components/ContactButtons/ContactButtons.js';
 import Carousel from '../../components/Carousel/Carousel';
 
 class Home extends React.Component {
@@ -36,7 +36,7 @@ class Home extends React.Component {
           </Col>
           <Col xs={12} sm={4} className={s.sidebar}>
             <Row>
-              <Col xs={12}> { ContactList /* Why not work as <ContactList /> */} </Col>
+              <Col xs={12}> { ContactButtons /* Why not work as <ContactList /> */} </Col>
             </Row>
           </Col>
         </Row>
