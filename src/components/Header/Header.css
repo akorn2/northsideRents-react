@@ -10,14 +10,14 @@
 @import '../variables.css';
 
 :root {
-  --brand-color: #61dafb;
+  --brand-color: #fff;
 }
 
 .root {
   background: url(http://mouseonthekeys.net/wp/wp-content/themes/wp-bloom/img/skin_dark/header.png);
   background-repeat: repeat-x;
   background-size: auto 100%;
-  color: #fff;
+  color: color(var(--brand-color) lightness(+10%));
 }
 
 /*
@@ -32,33 +32,45 @@
 .brand {
   color: color(var(--brand-color) lightness(+10%));
   text-decoration: none;
-  font-size: 1.75em; /* ~28px */
+  font-size: 1.4em; /* ~28px */
+  font-variant: small-caps;
+  font-family: var(--font-family-header);
 }
 
-.brandTxt {
+.brand img {
+  margin-top: -20px;
+}
+
+.brand span {
   margin-left: 10px;
-}
-
-.nav {
-  float: right;
-  margin-top: 6px;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: var(--font-family-header);
 }
 
 .banner {
   text-align: center;
 }
 
-.bannerTitle {
+.banner h1 {
   margin: 0;
   padding: 10px;
-  font-weight: normal;
+  padding-top: 13px;
+  font-weight: 500;
   font-size: 4em;
   line-height: 1em;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  font-family: var(--font-family-header);
 }
 
-.bannerDesc {
+.banner p {
   padding: 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.25em;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-family-header);
 }
