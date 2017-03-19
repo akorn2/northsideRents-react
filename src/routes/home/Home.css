@@ -9,6 +9,12 @@
 
 @import '../../components/variables.css';
 
+/* Header */
+.contactButton {
+  font-family: var(--font-family-header);
+  font-weight: 400;
+}
+
 .sidebar {
   padding-top: 15px;
 }
@@ -25,8 +31,20 @@
   padding-right: 20px;
 }
 
-p {
-  font-size: 22px;
+.header {
+  font-size: 1.3em;
+  font-family: var(--font-family-header);
+}
+
+.body p {
+  font-size: 1.3em;
+  font-family: var(--font-family-base);
+}
+
+.body li {
+  font-family: var(--font-family-base);
+  font-size: 1.3em;
+  list-style-type: none;
 }
 
 /*
