@@ -45,4 +45,10 @@ export const auth = {
     secret: process.env.TWITTER_CONSUMER_SECRET || 'KTZ6cxoKnEakQCeSpZlaUCJWGAlTEBJj0y2EMkUBujA7zWSvaQ',
   },
 
+  // https://cloudinary.com/
+  cloudinary: {
+    key: process.env.CLOUDINARY_PUBLIC_KEY || '553238366179143',
+    secret: process.env.CLOUDINARY_CLOUD_NAME || 'northsiderents',
+  },
+
 };
