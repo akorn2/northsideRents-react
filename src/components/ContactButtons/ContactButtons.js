@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListGroup, ListGroupItem, Glyphicon } from 'react-bootstrap';
-import credentials from '../Credentials/credentials';
+import credentials from '../Credentials/Credentials';
 
 const ContactButtons = (
   <ListGroup>
