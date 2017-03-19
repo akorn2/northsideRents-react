@@ -12,7 +12,8 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Roboto', sans-serif;
+  --font-family-base: 'Quattrocento', sans-serif;
+  --font-family-header: 'Oswald', sans-serif;
 
   /*
    * Layout

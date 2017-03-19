@@ -52,7 +52,7 @@ class Html extends React.Component {
             />,
           )}
           {
-            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Quattrocento:400,700" rel="stylesheet" />
           }
         </head>
         <body>
