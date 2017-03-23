@@ -14,13 +14,14 @@
 }
 
 .root {
-  background: url(http://mouseonthekeys.net/wp/wp-content/themes/wp-bloom/img/skin_dark/header.png);
-  background-repeat: repeat-x;
   background-size: auto 100%;
+  background-color: #fff;
   color: color(var(--brand-color) lightness(+10%));
 }
 
 /*
+  background: url(http://mouseonthekeys.net/wp/wp-content/themes/wp-bloom/img/skin_dark/header.png);
+  background-repeat: repeat-x;
  * TODO: load local image, instead of remote.image */
 
 .container {
@@ -29,18 +30,21 @@
   max-width: var(--max-content-width);
 }
 
+/*
 .brand {
   color: color(var(--brand-color) lightness(+10%));
   text-decoration: none;
-  font-size: 1.4em; /* ~28px */
+  font-size: 1.4em;
   font-variant: small-caps;
   font-family: var(--font-family-header);
 }
+*/
 
 .brand img {
   margin-top: -20px;
 }
 
+/*
 .brand span {
   margin-left: 10px;
   font-size: 28px;
@@ -48,15 +52,17 @@
   letter-spacing: 0.2em;
   font-family: var(--font-family-header);
 }
+*/
 
+/*
 .banner {
   text-align: center;
 }
 
 .banner h1 {
   margin: 0;
-  padding: 10px;
-  padding-top: 13px;
+  padding: 2px;
+  padding-top: 6px;
   font-weight: 500;
   font-size: 4em;
   line-height: 1em;
@@ -74,3 +80,4 @@
   letter-spacing: 0.1em;
   font-family: var(--font-family-header);
 }
+*/

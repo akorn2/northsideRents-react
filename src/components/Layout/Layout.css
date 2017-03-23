@@ -26,13 +26,23 @@ html {
 }
 
 .app {
-  background: url(http://mouseonthekeys.net/wp/wp-content/uploads/2012/07/bg_dark.jpg);
-  background-clip: border-box;
-  background-repeat: repeat repeat;
+  background: #282537;
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
 }
 
 /*
- * TODO: load local image, instead of remote.image */
+  background: url(https://s3.amazonaws.com/northsidereality/leather.jpg);
+  background-clip: border-box;
+  background-repeat: repeat repeat;
+
+ * load local image, instead of remote.image
+ background: url(http://mouseonthekeys.net/wp/wp-content/uploads/2012/07/bg_dark.jpg);
+
+ Leather bg: https://s3.amazonaws.com/northsidereality/leather.jpg?X-Amz-Date=20170319T192241Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=4b1147d1c5aedd68c5134b7b68843599a68539dfaf85ec66c16c231a2839357f&X-Amz-Credential=ASIAJUJBXSVXFPPAX7AA/20170319/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEEoaDJfsW5TLN%2B/i1tH8YCL6AQ/sZy7US6BLYmIA91vRNEGbNtWzg0fB4Tgim3A9yWMlOLhHbyTJhIcVBp/850uOimIM1eYFEu6wzxPM%2BF8F258pUv/PnxBSb%2BT21i76ls9VvaLkwxAwC1zZHZUElIdYGWXVAjfvUaNeNcTVKR746tPMxpwbq2uXVXZgSVDR7RPbdVt16wWhzhom0zi0ct/uy2iFwAf883rNlgwZ5BAtexKvcS09jtkiKC4Gu6A7lGioxeShxPkExoGu8njJQbB9%2BapVrI2szpfEy3l5%2BR1%2Bkg62E5qU5nHA9dRiAdro/4ihJPHcPNFmXC1A/9VDxelo2szG9DoyZ81VYBkohvC6xgU%3D
+ */
 
 a {
   color: #0074c2;

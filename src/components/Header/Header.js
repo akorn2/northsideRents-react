@@ -22,13 +22,9 @@ class Header extends React.Component {
         <div className={s.container}>
           <Navigation />
           <Link className={s.brand} to="/">
-            <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="38" height="38" alt="Northside Rents Property Management and Brokerage" />
-            <span>Northside Reality</span>
+            <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="" height="100" alt="Northside Rents Property Management and Brokerage" />
           </Link>
-          <div className={s.banner}>
-            <h1>Chicago Northside Reality</h1>
-            <p>Rental and Property Management Services</p>
-          </div>
+
         </div>
       </div>
     );
