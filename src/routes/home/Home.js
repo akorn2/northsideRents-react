@@ -10,9 +10,10 @@
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, PageHeader, Button } from 'react-bootstrap';
 import s from './Home.css';
-import { BodyText, HeaderText } from '../../components/Body/BodyHome.js';
+import BodyText from '../../components/Body/BodyHome.js';
+import SearchBox from '../../components/SearchBox/SearchBox.js';
 import ContactButtons from '../../components/ContactButtons/ContactButtons.js';
 import Carousel from '../../components/Carousel/Carousel';
 
@@ -29,11 +30,17 @@ class Home extends React.Component {
     return (
       <Grid className={s.root}>
         <Row className={s.rowie}>
-          <Col xs={12} > <Carousel /> </Col>
-          <Col xs={12} sm={8} >
-            <Col xs={12} className={s.header}> { HeaderText }</Col>
-            <Col xs={12} className={s.body}> { BodyText } </Col>
+          <Col xs={12} className={s.carousel} > <Carousel /> </Col>
+          <Col xs={12} className={s.header}>
+            <PageHeader>Chicago Northside Reality</PageHeader>
+            { SearchBox }
+            <div className={s.searchBox} >
+              <Button bsSize="large">Buy</Button>
+              <Button bsSize="large">Rent</Button>
+              <h4>search properties</h4>
+            </div>
           </Col>
+          <Col xs={12} sm={8} className={s.body}> { BodyText } </Col>
           <Col xs={12} sm={4} className={s.sidebar}>
             <Row>
               <Col xs={12} className={s.contactButton}>

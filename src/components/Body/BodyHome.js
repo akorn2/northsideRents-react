@@ -1,12 +1,4 @@
 import React from 'react';
-import { PageHeader } from 'react-bootstrap';
-
-const HeaderText = (
-  <PageHeader>
-  Chicago Northside Reality
-  </PageHeader>);
-  /* <small>
-     Rent or Buy</small> */
 
 const BodyText = (
   <div>
@@ -36,4 +28,4 @@ const BodyText = (
   </div>
 );
 
-export { BodyText, HeaderText };
+export default BodyText;
