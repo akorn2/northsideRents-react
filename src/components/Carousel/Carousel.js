@@ -8,21 +8,17 @@
  */
 
 import React from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { Carousel, Button } from 'react-bootstrap';
-import s from './Carousel.css';
+import { Carousel } from 'react-bootstrap';
+
 import imgKey1 from './keys1.jpg';
+import apartment from './apartment2.jpg';
 
-const wellStyles = { maxWidth: 350, margin: '0 auto 10px' };
-const carouselCaption = { marginBottom: '220px' };
-const cssButton = { fontSize: '22px' };
+ /**
+  TODO:
+  http://stackoverflow.com/questions/38020380/trying-to-convert-react-bootstrap-carousel-to-es6-and-redux#38031714
+  CreateClass to Component ES6
+  */
 
-const buttonsInstance = (
-  <div className="" style={wellStyles}>
-    <Button bsStyle="success" bsSize="large" style={cssButton} block>Available Properties</Button>
-    <Button bsStyle="success" bsSize="large" style={cssButton} block>Available Rentals</Button>
-  </div>
-);
 
 class CarouselClass extends React.Component {
   constructor() {
@@ -49,10 +45,8 @@ class CarouselClass extends React.Component {
         onSelect={(selectedIndex, e) => this.handleSelect(selectedIndex, e)}
       >
         <Carousel.Item>
-          <img width={900} height={500} alt="900x500" src={imgKey1} />
-          <Carousel.Caption className="s.carouselCaption" style={carouselCaption}>
-            { buttonsInstance }
-          </Carousel.Caption>
+          <img width={900} height={500} alt="900x500" src={apartment} />
+          <Carousel.Caption />
         </Carousel.Item>
         <Carousel.Item>
           <img width={900} height={500} alt="900x500" src={imgKey1} />
@@ -73,4 +67,4 @@ class CarouselClass extends React.Component {
   }
 }
 
-export default withStyles(s)(CarouselClass);
+export default CarouselClass;
