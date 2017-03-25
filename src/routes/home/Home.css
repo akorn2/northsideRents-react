@@ -9,6 +9,13 @@
 
 @import '../../components/variables.css';
 
+.root {
+  margin: 0 100px;
+  padding: 0 0 15px;
+  background-clip: border-box;
+  background-color: #fff;
+}
+
 /* Header */
 .contactButton {
   font-family: var(--font-family-header);
@@ -35,52 +42,14 @@
   min-width: 100%;
 }
 
-.searchBox {
-  width: 317px;
-  position: absolute;
-  right: -25px;
-  top: -85px;
-  padding: 15px 0 20px 30px;
-  z-index: 10;
-  background: url(http://www.silverpropertygroup.com/images/common/bg_action.png) no-repeat bottom;
-}
-
-.searchBox button {
-  display: block;
-  float: left;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  background: #ededed;
-  color: #5f5f5f;
-  margin: 15px 35px 30px 25px;
-}
-
-.searchBox h4 {
-  color: white;
-  position: absolute;
-  bottom: 15px;
-  left: 90px;
-  text-transform: uppercase;
-  font-family: var(--font-family-header);
-  font-weight: 200;
-}
-
-.rowie {
-  margin: 0 100px 25px;
-  padding: 0 0 15px;
-  background-clip: border-box;
-  background-color: #fff;
-}
-
-.root {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .header {
   font-size: 1.3em;
   font-family: var(--font-family-header);
+  background: #00c4ff;
+}
+
+.header h1 {
+  color: #fff;
 }
 
 .body p {
