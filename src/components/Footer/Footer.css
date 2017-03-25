@@ -10,10 +10,9 @@
 @import '../variables.css';
 
 .root {
-  background: url(http://mouseonthekeys.net/wp/wp-content/themes/wp-bloom/img/skin_light/footerbg.jpg);
-  background-repeat: repeat-x;
-  background-size: auto auto;
-  color: #fff;
+  margin: 0 100px;
+  color: #000;
+  background: rgb(233, 233, 233);
 }
 
 /*
@@ -27,11 +26,11 @@
 }
 
 .text {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .spacer {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .text,
@@ -43,10 +42,10 @@
 .link,
 .link:active,
 .link:visited {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 
 .link:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
