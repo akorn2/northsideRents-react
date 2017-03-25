@@ -8,10 +8,12 @@
  */
 
 import React from 'react';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { Carousel } from 'react-bootstrap';
 
 import imgKey1 from './keys1.jpg';
-import apartment from './apartment2.jpg';
+import apartment from './apartment.jpg';
+import s from './Carousel.css';
 
  /**
   TODO:
@@ -43,10 +45,14 @@ class CarouselClass extends React.Component {
         activeIndex={this.state.index}
         direction={this.state.direction}
         onSelect={(selectedIndex, e) => this.handleSelect(selectedIndex, e)}
+        indicators={null} nextLabel={null}
       >
         <Carousel.Item>
           <img width={900} height={500} alt="900x500" src={apartment} />
-          <Carousel.Caption />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img width={900} height={500} alt="900x500" src={imgKey1} />
@@ -67,4 +73,4 @@ class CarouselClass extends React.Component {
   }
 }
 
-export default CarouselClass;
+export default withStyles(s)(CarouselClass);
