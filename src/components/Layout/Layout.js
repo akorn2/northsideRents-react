@@ -9,10 +9,11 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Layout.css';
-import Header from '../Header';
-import Feedback from '../Feedback';
+import { Grid } from 'react-bootstrap';
+
 import Footer from '../Footer';
+import Header from '../Header';
+import s from './Layout.css';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -21,12 +22,11 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className={s.app}>
+      <Grid>
         <Header />
         {this.props.children}
-        <Feedback />
         <Footer />
-      </div>
+      </Grid>
     );
   }
 }

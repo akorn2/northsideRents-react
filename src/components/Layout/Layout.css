@@ -25,12 +25,12 @@ html {
   line-height: 1.375; /* ~22px */
 }
 
-.app {
-  background: #282537;
-  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
-  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+body {
+  background: #3f4c6b; /* Old browsers */
+  background: -moz-linear-gradient(top, #3f4c6b 0%, #3f4c6b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3f4c6b 0%, #3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3f4c6b 0%, #3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3f4c6b', endColorstr='#3f4c6b', GradientType=0); /* IE6-9 */
 }
 
 /*
