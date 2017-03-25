@@ -15,7 +15,9 @@
 
 .root {
   background-size: auto 100%;
-  background-color: #fff;
+  margin: 0 100px;
+  padding: 0;
+  background-clip: border-box;
   color: color(var(--brand-color) lightness(+10%));
 }
 
@@ -25,8 +27,9 @@
  * TODO: load local image, instead of remote.image */
 
 .container {
+  background-color: #fff;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 0;
   max-width: var(--max-content-width);
 }
 
@@ -40,8 +43,9 @@
 }
 */
 
-.brand img {
-  margin-top: -20px;
+.brand {
+  background-color: #00c4ff;
+  height: 100%;
 }
 
 /*
