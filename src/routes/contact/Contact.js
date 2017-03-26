@@ -8,7 +8,12 @@
  */
 
 import React, { PropTypes } from 'react';
+import { Col, Row, PageHeader } from 'react-bootstrap';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import SearchBox from '../../components/SearchBox/SearchBox';
+import Slide from '../../components/Slide/Slide';
+import BodyText from '../../components/Body/BodyHome';
+import ContactButtons from '../../components/ContactButtons/ContactButtons';
 import s from './Contact.css';
 
 class Contact extends React.Component {
@@ -18,12 +23,21 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
-          <h1>{this.props.title}</h1>
-          <p>...</p>
-        </div>
-      </div>
+      <Row className={s.root}>
+        <Col xs={12} className={s.carousel} > { Slide } </Col>
+        <Col xs={12} className={s.header}>
+          <PageHeader>Chicago Northside Reality</PageHeader>
+          <SearchBox />
+        </Col>
+        <Col xs={12} sm={8} className={s.body}> { BodyText } </Col>
+        <Col xs={12} sm={4} className={s.sidebar}>
+          <Row>
+            <Col xs={12} className={s.contactButton}>
+              <ContactButtons />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     );
   }
 }
