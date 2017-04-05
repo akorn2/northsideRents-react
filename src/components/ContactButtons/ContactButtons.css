@@ -1,5 +1,14 @@
 @import '../variables.css';
 
 .buttonHeader {
-  background: var(--brand-color);
+  background: var(--brand-primary-color);
+}
+
+.buttonHeader h4 {
+  color: var(--brand-primary-inverse-color) !important;
+}
+
+.buttons {
+  background: var(--brand-primary-inverse-color);
+  color: var(--brand-primary-color);
 }
