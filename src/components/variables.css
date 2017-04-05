@@ -12,8 +12,17 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Quattrocento', sans-serif;
-  --font-family-header: 'Oswald', sans-serif;
+  --font-family-base: 'Quattrocento', sans-serif, sans-serif; /* Font Body */
+
+  --font-family-header: 'Oswald', sans-serif, sans-serif; /* Font Headers */
+
+  /*
+   * Brand Colors
+   * ======================================================================== */
+
+  --brand-primary-color: #0e3385; /* Dark Blue for div Backgrounds and Title */
+  --brand-secondary-color: rgb(204, 52, 50); /* Red for heighlights */
+  --brand-primary-inverse-color: #fff; /* White for text over primary-color bgs */
 
   /*
    * Layout
@@ -30,3 +39,9 @@
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
 }
+
+/*
+  @Learning:
+  Cannot have space between new variables,
+  unless comments are to right of declaration.
+*/
