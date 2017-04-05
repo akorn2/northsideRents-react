@@ -13,7 +13,7 @@
   margin: 0 100px;
   padding: 0 0 15px;
   background-clip: border-box;
-  background-color: #fff;
+  background-color: var(--brand-primary-inverse-color);
 }
 
 /* Header */
@@ -45,11 +45,11 @@
 .header {
   font-size: 1.3em;
   font-family: var(--font-family-header);
-  background: #00c4ff;
+  background: var(--brand-primary-color);
 }
 
 .header h1 {
-  color: #fff;
+  color: var(--brand-primary-inverse-color);
 }
 
 .body p {
