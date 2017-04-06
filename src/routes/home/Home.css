@@ -10,7 +10,7 @@
 @import '../../components/variables.css';
 
 .root {
-  margin: 0 100px;
+  /* margin: 0 100px; */
   padding: 0 0 15px;
   background-clip: border-box;
   background-color: var(--brand-primary-inverse-color);
@@ -32,16 +32,7 @@
   padding: 15px;
 }
 
-/* carousel */
-
-.carousel {
-  padding: 0;
-}
-
-.carousel img {
-  min-width: 100%;
-}
-
+/*
 .header {
   font-size: 1.3em;
   font-family: var(--font-family-header);
@@ -51,6 +42,7 @@
 .header h1 {
   color: var(--brand-primary-inverse-color);
 }
+*/
 
 .body p {
   font-size: 1.3em;
