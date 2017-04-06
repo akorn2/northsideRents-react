@@ -9,9 +9,13 @@ class ContactButtons extends React.Component {
   render() {
     return (
       <ListGroup>
-        <ListGroupItem href="#" header="Share Our Services" className={s.buttonHeader} />
-        <ListGroupItem href="#" header="Facebook" bsStyle="info" className={s.buttons} />
-        <ListGroupItem href="#" header="Yelp" bsStyle="info" className={s.buttons} />
+        <ListGroupItem href="#" header="Apartment Application" className={s.buttonHeader} />
+        <ListGroupItem href="#" header="Application Forum" bsStyle="info" className={s.buttons} />
+        <ListGroupItem href="#" header="Pay Online Visa/MasterCard/Venmo" bsStyle="info" className={s.buttons} />
+        <ListGroupItem href="#" header="Find An Apartment" className={s.buttonHeader} />
+        <ListGroupItem href="#" header="Receive Email of tailored Options" bsStyle="info" className={s.buttons} />
+        <ListGroupItem href="#" header="Search Yourself" bsStyle="info" className={s.buttons} />
+        <ListGroupItem href="#" header="Call A Broker" bsStyle="info" className={s.buttons} />
         <ListGroupItem href="#" header="Contact Us" className={s.buttonHeader} />
         <ListGroupItem href="#" header="Phone" bsStyle="info" className={s.buttons} > <Glyphicon glyph="glyphicon glyphicon-earphone" /> 773 474 3137</ListGroupItem>
         <ListGroupItem href="#" header="Fax" bsStyle="info" className={s.buttons} > <Glyphicon glyph="glyphicon glyphicon-print" /> 773 474 3137</ListGroupItem>
