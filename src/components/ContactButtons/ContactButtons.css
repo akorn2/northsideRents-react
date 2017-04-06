@@ -8,6 +8,10 @@
   color: var(--brand-primary-inverse-color) !important;
 }
 
+.buttonHeader h4:hover {
+  color: var(--brand-primary-color) !important;
+}
+
 .buttons {
   background: var(--brand-primary-inverse-color);
   color: var(--brand-primary-color);
