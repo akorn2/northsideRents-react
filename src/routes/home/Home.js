@@ -6,9 +6,7 @@ import s from './Home.css';
 
 import BodyText from '../../components/Body/BodyHome.js';
 import ContactButtons from '../../components/ContactButtons/ContactButtons.js';
-import Slide from '../../components/Slide/Slide.js';
-import SearchBox from '../../components/SearchBox/SearchBox';
-
+import Slider from '../../components/Slider/Slider.js';
 
 class Home extends React.Component {
   static propTypes = {
@@ -22,12 +20,11 @@ class Home extends React.Component {
   render() {
     return (
       <Row className={s.root}>
-        <Col xs={12} className={s.carousel} > { Slide } </Col>
-        <Col xs={12} className={s.header}>
-          <PageHeader>Chicago Northside Reality</PageHeader>
-          <SearchBox />
+        <Slider />
+        <Col xs={12} sm={8} className={s.body}>
+          <PageHeader>Your Key to living on the Northside</PageHeader>
+          { BodyText }
         </Col>
-        <Col xs={12} sm={8} className={s.body}> { BodyText } </Col>
         <Col xs={12} sm={4} className={s.sidebar}>
           <Row>
             <Col xs={12} className={s.contactButton}>

@@ -11,7 +11,7 @@ import React, { PropTypes } from 'react';
 import { Col, Row, PageHeader } from 'react-bootstrap';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import SearchBox from '../../components/SearchBox/SearchBox';
-import Slide from '../../components/Slide/Slide';
+import Slide from '../../components/Slider/Slider';
 import BodyText from '../../components/Body/BodyRentals';
 import ContactButtons from '../../components/ContactButtons/ContactButtons';
 import s from './Rentals.css';

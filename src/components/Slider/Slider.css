@@ -1,0 +1,21 @@
+@import '../variables.css';
+
+.thumbnail {
+  background-color: var(--brand-primary-color);
+}
+
+.thumbnail div:nth-child(2) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.thumbnail h3,
+.thumbnail li,
+.thumbnail p {
+  color: var(--brand-primary-inverse-color);
+}
+
+.thumbnail img {
+  max-height: 350px;
+  min-width: 100%;
+}
