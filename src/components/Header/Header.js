@@ -9,7 +9,7 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import { Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import s from './Header.css';
 import Link from '../Link';
 import Navigation from '../Navigation';
@@ -19,15 +19,22 @@ import logoUrl2x from './logo-small@2x.png';
 class Header extends React.Component {
   render() {
     return (
-      <Row className={s.root}>
-        <Col xs={12} className={s.container}>
-          <Navigation />
-          <Link className={s.brand} to="/">
-            <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="" height="135" alt="Northside Rents Property Management and Brokerage" />
-          </Link>
-
-        </Col>
-      </Row>
+      <Grid fluid>
+        <Row>
+          <Col xs={12} className={s.container}>
+            <Grid className={s.root}>
+              <Row>
+                <Col className={s.flex}>
+                  <Link className={s.brand} to="/">
+                    <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="" height="125" alt="Northside Rents Property Management and Brokerage" />
+                  </Link>
+                  <Navigation />
+                </Col>
+              </Row>
+            </Grid>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

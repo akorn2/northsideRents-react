@@ -9,33 +9,51 @@
 
 @import '../variables.css';
 
-.root {
-  background-size: auto 100%;
-  margin: 0 100px;
-  padding: 0;
-  background-clip: border-box;
+.container {
+  background-color: var(--brand-primary-color);
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-.root a,
-.root span {
+.root {
+  padding: 0 !important;
+}
+
+.brand {
+  height: 100%;
+  padding: 5px;
+  padding-left: 23px;
+}
+
+.container a,
+.container span {
   color: var(--brand-primary-inverse-color) !important;
 }
+
+.flex {
+  display: flex;
+  position: relative;
+  align-content: flex-start;
+}
+
+/*
+.title {
+  display: inline-block;
+}
+
+.title h1 {
+  position: absolute;
+  bottom: 5px;
+  padding-left: 25px;
+  color: var(--brand-primary-inverse-color);
+  font-family: var(--font-family-header);
+}
+*/
 
 /*
   background: url(http://mouseonthekeys.net/wp/wp-content/themes/wp-bloom/img/skin_dark/header.png);
   background-repeat: repeat-x;
  * TODO: load local image, instead of remote.image */
-
-.container {
-  background-color: var(--brand-primary-color);
-  margin: 0 auto;
-  padding: 0;
-  max-width: var(--max-content-width);
-}
-
-.brand {
-  height: 100%;
-}
 
 /*
 .brand {
