@@ -20,9 +20,10 @@
    * Brand Colors
    * ======================================================================== */
 
-  --brand-primary-color: #0e3385; /* Dark Blue for div Backgrounds and Title */
-  --brand-secondary-color: rgb(204, 52, 50); /* Red for heighlights */
-  --brand-primary-inverse-color: #fff; /* White for text over primary-color bgs */
+  --brand-primary-color: #013ca6; /* Primary Dark for Branding Style */
+  --brand-secondary-color: rgb(204, 52, 50); /* Secondary highlights */
+  --brand-trigger-color: rgb(204, 52, 50); /* action trigger */
+  --brand-primary-inverse-color: #fff; /* Light overlay to Primary focal Divs */
 
   /*
    * Layout
@@ -34,6 +35,7 @@
    * Media queries breakpoints
    * ======================================================================== */
 
+  --screen-Retina-min: 320px;  /* Extra small screen / phone */
   --screen-xs-min: 480px;  /* Extra small screen / phone */
   --screen-sm-min: 768px;  /* Small screen / tablet */
   --screen-md-min: 992px;  /* Medium screen / desktop */
