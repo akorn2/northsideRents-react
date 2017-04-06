@@ -22,11 +22,13 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <Grid>
+      <div>
         <Header />
-        {this.props.children}
-        <Footer />
-      </Grid>
+        <Grid>
+          {this.props.children}
+          <Footer />
+        </Grid>
+      </div>
     );
   }
 }
