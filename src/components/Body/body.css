@@ -1,0 +1,5 @@
+@import '../variables.css';
+
+.panels h3 {
+  font-family: var(--font-family-base);
+}
