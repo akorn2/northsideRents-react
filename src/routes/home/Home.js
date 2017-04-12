@@ -19,20 +19,22 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Row className={s.root}>
+      <div className={s.root}>
         <Slider />
-        <Col xs={12} sm={8} className={s.body}>
-          <PageHeader>Your Key to living on the Northside</PageHeader>
-          <BodyText />
-        </Col>
-        <Col xs={12} sm={4} className={s.sidebar}>
-          <Row>
-            <Col xs={12} className={s.contactButton}>
-              <ContactButtons />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        <Row>
+          <Col xs={12} sm={8} className={s.body}>
+            <PageHeader>Your Key to living on the Northside</PageHeader>
+            <BodyText />
+          </Col>
+          <Col xs={12} sm={4} className={s.sidebar}>
+            <Row>
+              <Col xs={12} className={s.contactButton}>
+                <ContactButtons />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </div>
     );
   }
 }
