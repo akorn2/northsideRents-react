@@ -19,7 +19,11 @@ class BodyHome extends React.Component {
         </Panel>
 
         <Panel header={<h3>Buy Investment Properties</h3>}>
-          <p>Get your money to work for you with units to rent.</p>
+          <p>
+            Get alerted when lucrative oppertunities come to market.
+            With over 30 years of purchasing experience here in Chicagos
+            Northside, we
+          </p>
         </Panel>
 
       </div>
