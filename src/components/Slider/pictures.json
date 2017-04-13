@@ -1,0 +1,13 @@
+[{
+  "id": 1,
+  "first_name": "Marie",
+  "src": "/assets/components/Slider/apartment.jpg"
+}, {
+  "id": 2,
+  "first_name": "Samuel",
+  "src": "/assets/components/Slider/apartment1.jpg"
+}, {
+  "id": 3,
+  "first_name": "Elizabeth",
+  "src": "/assets/components/Slider/apartment.jpg"
+}]
