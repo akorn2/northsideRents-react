@@ -12,10 +12,11 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { Col, Row, Button, Image } from 'react-bootstrap';
 
 import ThumbnailBox from './ThumbnailBox.js';
-
 import s from './Slider.css';
-import apartments from './pictures.json';
+import apartments from './apartments.json';
 
+// import img from './apartment.jpg';
+// import img1 from './apartment1.jpg';
 
 class Slider extends Component {
   constructor(props) {
@@ -23,33 +24,36 @@ class Slider extends Component {
 
     this.state = {
       apartments,
-      sliderImage: apartments[0],
+      activeApartment: apartments[0],
     };
   }
 
   render() {
+    // const Amenities = this.state.activeApartment.amenities;
+    const a = this.state.activeApartment;
+    // const b = this.state.activeApartment.amenities;
     return (
       <Row className={s.slider}>
 
         <Col xs={12}>
 
           <Image
-            src={this.state.sliderImage.src}
+            src={this.state.activeApartment.slider}
             className={s.slide}
           />
 
           <div className={s.ThumbnailBox}>
             <ThumbnailBox
               apartments={this.state.apartments}
-              onSlideChange={sliderImage => this.setState({ sliderImage })}
+              onSlideChange={activeApartment => this.setState({ activeApartment })}
             />
           </div>
 
         </Col>
 
         <Col xs={6} className={s.details}>
-          <h3>Northcenter Apartment</h3>
-          <p>Conviently Located along Brown Line. Near strolls and parks</p>
+          <h3>{a.header}</h3>
+          <p>{a.description}</p>
           <p>
             <Button bsStyle="primary">More Images</Button>&nbsp;
             <Button bsStyle="default">View Map</Button>
@@ -61,25 +65,27 @@ class Slider extends Component {
 
           <Col xs={4}>
             <ul>
-              <li>2 br, 2 bth</li>
-              <li>Avail April 1</li>
-              <li>$1995</li>
-            </ul>
-          </Col>
-          <Col xs={4}>
-            <ul>
               <li>Near L</li>
               <li>Near Buses</li>
+              <li>Laundry In Building</li>
               <li>Laundry in Unit</li>
             </ul>
           </Col>
           <Col xs={4}>
             <ul>
-              <li>Parking</li>
-              <li>Pet Ok</li>
-              <li>4294 N. Awesome</li>
+              <li>Near Buses</li>
+              <li>Laundry In Building</li>
+              <li>Laundry in Unit</li>
             </ul>
           </Col>
+          <Col xs={4}>
+            <ul>
+              <li>Near Buses</li>
+              <li>Laundry in Unit</li>
+            </ul>
+          </Col>
+
+
         </Col>
 
       </Row>
@@ -89,3 +95,25 @@ class Slider extends Component {
 }
 
 export default withStyles(s)(Slider);
+
+// <ul>
+//   <AmenityLi value={a.nearL} />
+//   {a.nearL ? <li> Near L</li> : null }
+//   {a.nearBuses ? <li> Near Buses</li> : null }
+//   {a.laundryInUnit ? <li> Laundry in Unit</li> : null }
+//   {a.laundryInBuilding ? <li> Laundry in Unit</li> : null }
+// </ul>
+
+
+// <AmenityLi value={a.nearL} />
+// {a.nearL ? <li> Near L</li> : null }
+// {a.nearBuses ? <li> Near Buses</li> : null }
+// {a.laundryInUnit ? <li> Laundry in Unit</li> : null }
+// {a.laundryInBuilding ? <li> Laundry in Unit</li> : null }
+
+// { Amenities.map(props => (
+//   <AmenityLi
+//     title={props.key}
+//     value={props.value}
+//   />
+// )) }

@@ -1,5 +1,32 @@
 @import '../variables.css';
 
-.panels h3 {
-  font-family: var(--font-family-base);
+/* BLUE */
+.panels > div > div:first-child {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#274c7f+0,003580+50,003580+51,0c3070+100 */
+  background: var(--brand-primary-color); /* Old browsers */
+  background: -moz-linear-gradient(top, #274c7f 0%, #003580 50%, #003580 51%, #0c3070 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #274c7f 0%, #003580 50%, #003580 51%, #0c3070 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #274c7f 0%, #003580 50%, #003580 51%, #0c3070 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#274c7f', endColorstr='#0c3070', GradientType=0); /* IE6-9 */
+}
+
+/* GOLD */
+.panels > div > div:nth-of-type(2) {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,fdbb08+100 */
+  background: #fefcea; /* Old browsers */
+  background: -moz-linear-gradient(top, #fefcea 0%, #fdbb08 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefcea 0%, #fdbb08 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefcea 0%, #fdbb08 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fefcea', endColorstr='#fdbb08', GradientType=0); /* IE6-9 */
+}
+
+.panels h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--font-family-header);
+}
+
+.panels button {
+  background-color: var(--brand-primary-color);
 }

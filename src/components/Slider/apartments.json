@@ -1,0 +1,61 @@
+[{
+  "id": 1,
+  "header": "Patrick",
+  "description": "Conviently Located along Brown Line. Near strolls and parks",
+  "neighborhood": "Schulist and Sons",
+  "thumbnail": "http://wibiti.com/images/hpmain/471/298471.jpg",
+  "slider": "http://wibiti.com/images/hpmain/471/298471.jpg",
+  "gallery1": "http://dummyimage.com/800x600.jpg/ff4444/ffffff",
+  "galleryImages": [
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    }
+  ],
+  "amenities": [
+    {"key": "Beds", "value": 2},
+    {"key": "Baths", "value": 3},
+    {"key": "avail", "value": "7/8/2016"},
+    {"key": "Monthly Rent", "value": 1244},
+    {"key": "Near L", "value": true},
+    {"key": "Near Buses", "value": true},
+    {"key": "Laundry in Unit", "value": true},
+    {"key": "Laundry in Building", "value": true},
+    {"key": "Garage Parking", "value": true},
+    {"key": "Street Parking", "value": true},
+    {"key": "Cat", "value": false},
+    {"key": "Dog", "value": true}
+  ]
+}, {
+  "id": 2,
+  "header": "Alice",
+  "description": "Wrigley Rocks! Located along Brown Line. Near strolls and parks",
+  "neighborhood": "Wintheiser, Hayes and Blanda",
+  "thumbnail": "https://c2.staticflickr.com/6/5465/7096208979_c663cf78e8_z.jpg",
+  "slider": "https://c2.staticflickr.com/6/5465/7096208979_c663cf78e8_z.jpg",
+  "gallery1": "http://dummyimage.com/800x600.jpg/ff4444/ffffff",
+  "galleryImages": [
+    {
+    },
+    {
+    }
+  ],
+  "amenities": [
+  {"key": "Beds", "value": 1},
+  {"key": "Baths", "value": 2},
+  {"key": "avail", "value": "6/8/2016"},
+  {"key": "Monthly Rent", "value": 1244},
+  {"key": "Near L", "value": true},
+  {"key": "Near Buses", "value": true},
+  {"key": "Laundry in Unit", "value": true},
+  {"key": "Laundry in Building", "value": true},
+  {"key": "Garage Parking", "value": true},
+  {"key": "Street Parking", "value": true},
+  {"key": "Cat", "value": true},
+  {"key": "Dog", "value": true}
+  ]
+}]

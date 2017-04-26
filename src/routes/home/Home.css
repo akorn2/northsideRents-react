@@ -10,7 +10,7 @@
 @import '../../components/variables.css';
 
 .root {
-  /* margin: 0 100px; */
+  margin: 0 100px;
   padding: 0 0 15px;
   background-clip: border-box;
   background-color: var(--brand-primary-inverse-color);
@@ -23,10 +23,6 @@
 }
 
 /* SideBar */
-
-.sidebar {
-  padding-top: 15px;
-}
 
 .sidebar img {
   padding: 15px;

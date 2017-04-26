@@ -26,7 +26,7 @@ class Header extends React.Component {
               <Row>
                 <Col className={s.flex}>
                   <Link className={s.brand} to="/">
-                    <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="" height="125" alt="Northside Rents Property Management and Brokerage" />
+                    <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="" height="120" alt="Northside Rents Property Management and Brokerage" />
                   </Link>
                   <Navigation />
                 </Col>

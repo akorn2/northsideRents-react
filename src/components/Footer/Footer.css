@@ -11,8 +11,7 @@
 
 .root {
   margin: 0 100px;
-  color: #000;
-  background: rgb(233, 233, 233);
+  background: var(--brand-primary-color);
 }
 
 /*
@@ -25,12 +24,17 @@
   text-align: center;
 }
 
-.text {
-  color: rgba(0, 0, 0, 0.5);
+.text,
+.text a,
+.text span,
+.link {
+  color: var(--brand-primary-inverse-color);
+  opacity: 0.6;
 }
 
 .spacer {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--brand-primary-inverse-color);
+  opacity: 0.3;
 }
 
 .text,
@@ -42,10 +46,10 @@
 .link,
 .link:active,
 .link:visited {
-  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 
 .link:hover {
-  color: rgba(0, 0, 0, 1);
+  color: var(--brand-primary-inverse-color);
+  opacity: 0.5;
 }

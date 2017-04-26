@@ -22,8 +22,10 @@ class Home extends React.Component {
       <div className={s.root}>
         <Slider />
         <Row>
-          <Col xs={12} sm={8} className={s.body}>
+          <Col xs={12} sm={12} className={s.body}>
             <PageHeader>Your Key to living on the Northside</PageHeader>
+          </Col>
+          <Col xs={12} sm={8} className={s.body}>
             <BodyText />
           </Col>
           <Col xs={12} sm={4} className={s.sidebar}>
